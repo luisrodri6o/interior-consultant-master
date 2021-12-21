@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  font-family: "Montserra";
+}
+body {
+  background: #181710;
+  padding: 2%;
+  margin: auto;
+}
+.main {
+  display: grid;
+}
+.header {
+  background: #181710;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  height: 2em;
+  width: auto;
+  justify-content: space-between;
+}
+.boton {
+  font-family: "Crimson Pro";
+  background: #181710;
+  border: 1px solid #ffffff;
+  height: inherit;
+  padding: 0.5em 0.5em;
+  text-transform: uppercase;
+}
+#btn-menu {
+  display: none;
+}
+
+.togle {
+  cursor: pointer;
+  position: relative;
+  height: auto;
+  width: 2em;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 0.3em;
+}
+.togle .sp {
+  position: relative;
+  width: 2em;
+  height: 4px;
+  border-radius: 10px;
+  transition: all 600ms;
+  background-color: white;
+}
+
+#btn-menu:checked ~ .togle .sp {
+  position: absolute;
+}
+#btn-menu:checked ~ .togle #sp3 {
+  opacity: 0;
+}
+#btn-menu:checked ~ .togle #sp2 {
+  transform: rotate(140deg);
+}
+#btn-menu:checked ~ .togle #sp1 {
+  transform: rotate(-140deg);
+}
+
+.menu {
+  margin-left: -100%;
+  background: #181710;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  justify-content: center;
+  transition: 500ms;
+}
+#btn-menu:checked ~ .menu {
+  margin-left: 0;
+  position: fixed;
+  top: 0;
+}
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 5%;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.item {
+  padding: 10%;
+}
+.item:hover {
+  border-bottom: solid;
+}
+.item:active {
+  color: blueviolet;
+}
+.main picture img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.main article {
+  margin: 10% 35% 10% 0%;
+}
+.mian article h1 {
+  font-family: "lora";
+  font-size: 10em;
+}
+.main article p {
+  margin: 5% 0% 5%;
+  font-size: 0.9em;
+}
+.main .article a {
+  font-size: 0.8em;
+}
+
+.section {
+  margin: 1% 0%;
+}
+.card {
+  padding: 3% 0% 4% 4%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5vw;
+  background: #181710;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 83%;
+  transform: translate(14%, -50%);
+}
+.card-header {
+  display: flex;
+}
+.card-header article {
+  font-size: 100%;
+  margin: 0 0 0 1%;
+  padding: 3%;
+}
+.card-header article p {
+  color: #828282;
+  font-size: 0.9em;
+}
+
+.card-header picture {
+  margin: auto 0;
+}
+.card-header picture img {
+  border-radius: 50%;
+  object-fit: cover;
+  block-size: 3.2em;
+}
+.card-body {
+  display: flex;
+}
+.card-body h2 {
+  font-family: "lora";
+  font-size: 1.25em;
+}
+#foter {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.85em;
+}
+@media screen and (min-width: 660px) {
+  body {
+    padding: 3% 6% 2%;
+  }
+
+  .menu {
+    position: relative;
+    width: 50%;
+    height: inherit;
+  }
+  #btn-menu:checked ~ .menu {
+    position: relative;
+  }
+  .section {
+    margin: 6% 0%;
+  }
+  .menu ul {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .menu .item {
+    padding: 0;
+  }
+  .togle {
+    display: none;
+  }
+  .main {
+    grid-template-columns: 35% 1fr;
+  }
+  .main .article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40vw;
+  }
+  .main .article p {
+    font-size: 1.1em;
+  }
+  main .article h1 {
+    width: 32vw;
+    font-size: 2em;
+  }
+
+  .card {
+    row-gap: 0.65vw;
+    width: 58%;
+    transform: translate(64%, -50%);
+  }
+  .card-header article h5 {
+    font-size: 1.05em;
+  }
+  .card-header article p {
+    font-size: 0.95em;
+  }
+  .card-body h2 {
+    font-size: 1.4em;
+  }
+}

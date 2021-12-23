@@ -37,12 +37,11 @@
 ## Overview
 
 ![screenshot](https://github.com/luisrodri6o/interior-consultant-master/blob/master/screenshot/descktop.png)
-![screenshot](https://github.com/luisrodri6o/interior-consultant-master/blob/master/screenshot/movile-menu.png)
-![screenshot](https://github.com/luisrodri6o/interior-consultant-master/blob/master/screenshot/movile.png)
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
 - Where can I see your demo?
+  https://interior-consultant-mast-843ca.web.app/
 - What was your experience?
   it was a challenging and satisfying experience
 - What have you learned/improved?

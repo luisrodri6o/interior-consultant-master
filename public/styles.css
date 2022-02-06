@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap");
-
+/*                                                              general */
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +19,7 @@ body {
 .main {
   display: grid;
 }
+/*                                                                    menu */
 .header {
   background: #181710;
   margin: auto;
@@ -39,7 +40,7 @@ body {
 #btn-menu {
   display: none;
 }
-
+/*                                       hamburger Buttom */
 .togle {
   cursor: pointer;
   position: fixed;
@@ -52,7 +53,7 @@ body {
   justify-content: center;
   row-gap: 0.3em;
 }
-.togle .sp {
+.togle span {
   position: relative;
   width: 2em;
   height: 4px;
@@ -64,19 +65,19 @@ body {
   top: 4%;
 }
 
-#btn-menu:checked ~ .togle .sp {
+#btn-menu:checked ~ .togle span {
   position: absolute;
 }
-#btn-menu:checked ~ .togle #sp3 {
+#btn-menu:checked ~ .togle .sp3 {
   opacity: 0;
 }
-#btn-menu:checked ~ .togle #sp2 {
+#btn-menu:checked ~ .togle .sp2 {
   transform: rotate(140deg);
 }
-#btn-menu:checked ~ .togle #sp1 {
+#btn-menu:checked ~ .togle .sp1 {
   transform: rotate(-140deg);
 }
-
+/*                                         menu content */
 .menu {
   margin-left: -100%;
   background: #181710;
@@ -132,6 +133,7 @@ body {
 .main .article a {
   font-size: 0.8em;
 }
+/*                                                                                conten */
 
 .section {
   margin: 1% 0%;
@@ -182,6 +184,7 @@ body {
   text-align: center;
   font-size: 0.85em;
 }
+/*                                                                                   responsive */
 @media screen and (min-width: 660px) {
   body {
     padding: 3% 6% 2%;

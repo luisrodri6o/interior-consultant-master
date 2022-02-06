@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://interior-consultant-mast-843ca.firebaseapp.com/">
       Demo
     </a>
     <span> | </span>
@@ -36,7 +36,7 @@
 
 ## Overview
 
-![screenshot](https://github.com/luisrodri6o/interior-consultant-master/blob/master/screenshot/descktop.png)
+[screenshot](https://github.com/luisrodri6o/interior-consultant-master/blob/master/screenshots/descktop.png)
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
